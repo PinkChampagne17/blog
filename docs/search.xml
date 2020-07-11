@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>为Hexo使用Material主题</title>
+      <link href="/blog/2020/07/12/%E4%B8%BAHexo%E4%BD%BF%E7%94%A8Material%E4%B8%BB%E9%A2%98/"/>
+      <url>/blog/2020/07/12/%E4%B8%BAHexo%E4%BD%BF%E7%94%A8Material%E4%B8%BB%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://img2020.cnblogs.com/blog/1981089/202007/1981089-20200712003550454-233983481.png" alt=""></p><p><a href="https://pinkchampagne17.github.io/blog/" target="_blank" rel="noopener">我的Material主题Hexo博客实例</a></p><h1 id="开始入门"><a href="#开始入门" class="headerlink" title="开始入门"></a>开始入门</h1><h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><h3 id="方式一：直接下载源代码"><a href="#方式一：直接下载源代码" class="headerlink" title="方式一：直接下载源代码"></a>方式一：直接下载源代码</h3><p>下载后放在theme文件夹里。</p><p><strong><a href="https://github.com/bolnh/hexo-theme-material/releases/tag/1.5.6" target="_blank" rel="noopener">Download latest release version</a></strong></p><h3 id="方式二：使用Git下载"><a href="#方式二：使用Git下载" class="headerlink" title="方式二：使用Git下载"></a>方式二：使用Git下载</h3><p>你可以自己决定想要使用的分支；仅限开发者使用。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd themes</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;viosey&#x2F;hexo-theme-material.git material</span><br><span class="line">cd material</span><br><span class="line">git checkout &#123;branch&#x2F;tags name&#125;</span><br></pre></td></tr></table></figure><h2 id="使用站内搜索插件"><a href="#使用站内搜索插件" class="headerlink" title="使用站内搜索插件"></a>使用站内搜索插件</h2><p>安装 <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a> 插件。</p><p>修改<strong><em>theme/material</em></strong> 目录 <code>_config.yml</code> 中的 search值</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">    <span class="attr">use:</span> <span class="string">local</span></span><br><span class="line">    <span class="attr">swiftype_key:</span></span><br></pre></td></tr></table></figure><p>然后在<strong><em>主目录</em></strong>的<code>_config.yml</code>文件中添加</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">    <span class="attr">field:</span> <span class="string">all</span></span><br></pre></td></tr></table></figure><h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>修改<strong><em>theme/material/layout/_widget/dnsprefetch.ejs</em></strong>文件，否则会报错，修改内容如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;% &#125; else if(theme.comment.use.startsWith(&quot;disqus&quot;)) &#123; %&gt;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 修改为</span><br><span class="line"></span><br><span class="line">&lt;% &#125; else if(theme.comment.use &amp;&amp; theme.comment.use.startsWith(&quot;disqus&quot;)) &#123; %&gt;</span><br></pre></td></tr></table></figure><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol><li><p><a href="https://github.com/bolnh/hexo-theme-material" target="_blank" rel="noopener">bolnh/hexo-theme-material: Material Design theme for hexo.</a></p></li><li><p><a href="https://www.jianshu.com/p/e551bc71f62c" target="_blank" rel="noopener">Hexo + Material + Github 搭建博客与配置</a></p></li><li><p><a href="https://github.com/bolnh/hexo-theme-material/issues/686" target="_blank" rel="noopener">hexo s  依旧报错。 · Issue #686 · bolnh/hexo-theme-material</a></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PHP使用MySQLi对数据库进行insert操作时报错Data truncated for column &#39;xxx&#39; at row 1</title>
+      <link href="/blog/2020/07/11/PHP%E4%BD%BF%E7%94%A8MySQLi%E5%AF%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9B%E8%A1%8Cinsert%E6%93%8D%E4%BD%9C%E6%97%B6%E6%8A%A5%E9%94%99Data%20truncated%20for%20column%20&#39;xxx&#39;%20at%20row%201/"/>
+      <url>/blog/2020/07/11/PHP%E4%BD%BF%E7%94%A8MySQLi%E5%AF%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9B%E8%A1%8Cinsert%E6%93%8D%E4%BD%9C%E6%97%B6%E6%8A%A5%E9%94%99Data%20truncated%20for%20column%20&#39;xxx&#39;%20at%20row%201/</url>
+      
+        <content type="html"><![CDATA[<p>PHP在MySQLi使用SQL语句<code>INSET INTO student (sid, name, age, sex, uid) values (123, &#39;123&#39;, &#39;123&#39;, &#39;男&#39;, 1)</code>对数据库进行操作时出现了”Data truncated for column ‘xxx’ at row 1”的错误信息。</p><h2 id="问题原因与解决方法"><a href="#问题原因与解决方法" class="headerlink" title="问题原因与解决方法"></a>问题原因与解决方法</h2><p>这里以面向对象方法为例。</p><p>在数据库表创建时使用了<code>default charset=utf8</code>，但创建mysqli对象后没有使用<code>set_charset()</code>方法并填入参数<code>&quot;utf-8&quot;</code>，并且因为这条SQL语句中包含了中文字符，所以出现了报错。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--数据库创建表时使用了default charset=utf8</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">user</span> (</span><br><span class="line">   <span class="keyword">id</span> <span class="built_in">int</span> auto_increment primary <span class="keyword">key</span>,</span><br><span class="line">   uname <span class="built_in">varchar</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line">   pwd <span class="built_in">varchar</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="literal">null</span></span><br><span class="line">)<span class="keyword">default</span> <span class="keyword">charset</span>=utf8;</span><br></pre></td></tr></table></figure><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$conn = <span class="keyword">new</span> mysqli(<span class="string">"localhost"</span>, <span class="string">"root"</span>, <span class="string">""</span>, <span class="string">"student_management"</span>, <span class="number">3306</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 在创建mysqli对象后设置charset为utf-8</span></span><br><span class="line">$conn-&gt;set_charset(<span class="string">"utf8"</span>);</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/blog/2020/07/11/hello-world/"/>
       <url>/blog/2020/07/11/hello-world/</url>
