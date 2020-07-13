@@ -27,6 +27,12 @@ cd material
 git checkout {branch/tags name}
 ```
 
+## 应用主题
+修改***主目录***的`_config.yml`文件中的`theme`属性为`material`。
+```YML
+theme: material
+```
+
 ## 使用站内搜索插件
 安装 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) 插件。
 
