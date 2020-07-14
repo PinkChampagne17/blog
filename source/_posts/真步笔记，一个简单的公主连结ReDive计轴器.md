@@ -1,5 +1,5 @@
 # 真步笔记 MahoNotes
-一个简单的公主连结Re:Dive的计轴器。
+一个简单的公主连结Re:Dive计轴器。
 
 ![GitHub stars](https://img.shields.io/github/stars/PinkChampagne17/MahoNotes?style=social)
 ![GitHub](https://img.shields.io/github/license/PinkChampagne17/MahoNotes?style=flat-square)
