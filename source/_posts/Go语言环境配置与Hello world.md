@@ -5,6 +5,8 @@ categories:
 - Go
 ---
 
+这只是一个简单的示例，个别细节没做太多解释，可去官网或其他网站自行了解。
+
 ## 示例系统
 - Windows 10
 
@@ -86,12 +88,13 @@ Installing github.com/josharian/impl SUCCEEDED
 1 tools failed to install.
 ```
 
-安装完成后在命令行使用以下命令。如果没有使用该命令，则VS Code在用于编写Go语言文件时会提示错误**go: cannot find main module; see 'go help modules'**。
-```text
-go env -w GO111MODULE=off
-```
-
 ## Hello, world!
+新建一个名为hello-world的文件夹，并在此文件夹下运行go mod init {项目名}：
+```shell
+> mkdir hello-world             # 新建名为hello-world文件夹
+> cd ./hello-world              # 切换目录到该文件夹下
+> go mod init hello-world       # 使用go mod进行初始化
+```
 新建一个名为**main.go**的文件，放入以下代码。
 ```GO
 package main
